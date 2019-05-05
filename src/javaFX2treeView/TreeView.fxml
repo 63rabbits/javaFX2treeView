@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFX2treeView.TreeViewController">
+  <children>
+    <VBox layoutX="20.0" layoutY="20.0" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+      <children>
+        <VBox prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+          <children>
+            <Label text="* Using ICON" />
+            <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+              <children>
+                <TreeView fx:id="trv01" onMouseClicked="#trv01DoubleClick" prefHeight="150.0" prefWidth="250.0" />
+                <Button fx:id="btn01" mnemonicParsing="false" onAction="#btn01OnAction" text="&gt;" />
+                <TextArea fx:id="txa01" editable="false" focusTraversable="false" prefWidth="250.0" style="-fx-background-color: beige" wrapText="true" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox prefHeight="-1.0" prefWidth="-1.0">
+          <children>
+            <Label text="- To select multiple row, use SHIFT or CTRL keys." />
+            <Label text="- To get information directly, double-click the row." />
+          </children>
+        </VBox>
+        <VBox disable="false" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+          <children>
+            <Label text="* Using Check Box Tree" />
+            <HBox alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+              <children>
+                <TreeView fx:id="trv02" prefHeight="150.0" prefWidth="250.0" />
+                <Button fx:id="btn02" mnemonicParsing="false" onAction="#btn02OnAction" text="&gt;" />
+                <TextArea fx:id="txa02" editable="false" focusTraversable="false" prefWidth="250.0" style="-fx-background-color: beige" wrapText="true" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
